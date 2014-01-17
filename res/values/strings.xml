@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Galax</string>
+    <string name="server">http://10.0.2.2:4567</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_registration">Registration</string>
+    
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_back">Back</string>
+    <string name="action_exit">Exit</string>
+    
+    <string name="email_address">Email address</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="registration">Registration</string>
+    
+    <string name="login_successful">Login successful.</string>
+    <string name="login_failed">Login failed.</string>
+    <string name="error_during_signup">Error during the signup.</string>
+    <string name="signed_up">You\'re now signed up.</string>
+
+</resources>
