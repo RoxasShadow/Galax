@@ -1,0 +1,7 @@
+- User.isLogged() seems not working
+- Perform all the tests
+
+- Activities don't close themself and remain active even after the logout
+- Check the message exchange between users
+
+- Remember to reset/ignore at the server-side the addresses which are not updated from x minutes

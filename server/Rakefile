@@ -1,0 +1,16 @@
+#! /usr/bin/env ruby
+require 'rake'
+
+task :default => [ :test, :run ]
+
+task :test do
+  File.delete 'db/test.db' if File.exists? 'db/test.db'
+  FileUtils.cd 'test' do
+    sh 'rspec user_spec.rb --backtrace --color --format doc'
+  end
+  File.delete 'db/test.db' if File.exists? 'db/test.db'
+end
+
+task :run, :port do |t, args|
+  sh "thin -R config.ru -p #{args[:port] || 4567} start"
+end
